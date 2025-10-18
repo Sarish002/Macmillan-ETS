@@ -1,0 +1,95 @@
+div.calculator {
+    border: 5px solid #ffffff;
+    border-radius: 5px;
+    background-color: #242124;
+
+    position: absolute;
+    top: 17.5%;
+    left: 35%;
+    padding: 2em;
+}
+
+div.container {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-text: left;
+}
+
+label.input {
+    color: #a9a9a9;
+    font-size: 20px;
+    position: absolute;
+    down: 20px;
+    right: 220px;
+    display: inline-block;
+    width: 150px;
+
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+input{
+    background-color: #242124;
+    color: #ffffff;
+    font-size: 30px;
+    box-shadow: none;
+    outline: none;
+    border-radius: 3px;
+    font-family: Georgia;
+    margin-top: 10px
+}
+
+
+input:hover ~ label.input {
+    transform: translateY(-22px);
+}
+
+input:user-valid ~ label.input {
+    transform: translateY(-22px);
+}
+
+input:focus ~ label.input {
+    transform: translateY(-22px);
+}
+
+.rest {
+    padding: 6px;
+    font-family: Trebuchet MS;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    background-image: linear-gradient(#c33764, #1d2671);
+    color: #ffffff;
+
+    transition-property: scale;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: -0.05s;
+}
+
+.rest:hover {
+    scale: 1.25
+}
+
+p.calculator {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: Trebuchet MS;
+    margin-top: 5px;
+}
+
+p.result {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: Trebuchet MS;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
