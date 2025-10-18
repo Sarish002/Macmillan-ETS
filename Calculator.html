@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js"></script>
+</head>
+<body bgcolor = "black">
+    <div style="align-text: right" class="whole">
+        <div class = "calculator">
+            <center><p class="calculator"><b>Calculator</b></p></center>
+            <div class="container">
+                <input type="text" class="name" required id="input">
+                <label class="input">
+                    Number 1
+                </label>
+            </div>
+            <div class="container">
+                <input type="text" class="password" required id="input2">
+                <label class="input">
+                    Number 2
+                </label>
+            </div>
+            <button onclick="addition()" class="rest2">Add</button>
+            <button onclick="subtract()" class="rest2">Subtract</button>
+            <button onclick="multiply()" class="rest2">Multiply</button>
+            <button onclick="divide()" class="rest2">Divide</button>
+            <center><p class="result" id="result"></p></center>
+        </div>
+        <div class="calculator">
+            <center>
+             <button onclick="addNumber(1)" class="rest" onmousedown="event.preventDefault()">1</button>
+            <button onclick="addNumber(2)" class="rest" onmousedown="event.preventDefault()">2</button>
+            <button onclick="addNumber(3)" class="rest" onmousedown="event.preventDefault()">3</button>
+            <button onclick="addNumber(4)" class="rest" onmousedown="event.preventDefault()">4</button>
+            <button onclick="addNumber(5)" class="rest" onmousedown="event.preventDefault()">5</button>
+            <button onclick="addNumber(6)" class="rest" onmousedown="event.preventDefault()">6</button>
+            <button onclick="addNumber(7)" class="rest" onmousedown="event.preventDefault()">7</button>
+            <button onclick="addNumber(8)" class="rest" onmousedown="event.preventDefault()">8</button>
+            <button onclick="addNumber(9)" class="rest" onmousedown="event.preventDefault()">9</button>
+            <button onclick="addNumber(0)" class="rest" onmousedown="event.preventDefault()">0</button>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
