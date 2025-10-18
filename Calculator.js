@@ -38,6 +38,11 @@ function divide() {
     document.getElementById("input2").value = "";
 }
 
+function del() {
+    document.getElementById("input").value = "";
+    document.getElementById("result").innerHTML = 0;
+}
+
 function addNumber(n) {
     document.activeElement.value += String(n);
     document.activeElement.setCustomValidity("")
